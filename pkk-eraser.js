@@ -12,7 +12,11 @@ setInterval(_=>{
 			   ||searchWord("PKP",i,j)
 			   ||searchWord("PPKK",i,j)
 			   ||searchWord("PKKK",i,j)
-			   ||searchWord("KTB",i,j)) {
+			   ||searchWord("KTB",i,j)
+			   ||searchWord("KKT",i,j)
+			   ||searchWord("BTB",i,j)
+			   ||searchWord("BKB",i,j)
+			   ||searchWord("TBB",i,j)) {
 				for (let k = 0; k < 5; k++) {
 					writeCharToXY(" ",0,i+k,j);
 				}
