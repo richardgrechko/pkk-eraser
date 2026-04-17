@@ -5,13 +5,17 @@ function searchWord(word,x,y) {
 	}
 	return k
 }
-setInterval(_=>{for (let i = -100; i < 100; i++) {
-	for (let j = -50; j < 50; j++) {
-		if (searchWord("PKK",i,j)) {
-			for (let k = 0; i < 3; i++) {
-				writeCharToXY(" ",0,i,j);
+setInterval(_=>{
+	for (let i = -100; i < 100; i++) {
+		for (let j = -50; j < 50; j++) {
+			if (searchWord("PKK",i,j)
+			   ||searchWord("PKP",i,j)
+			   ||searchWord("PPKK",i,j)
+			   ||searchWord("PKKK",i,j)) {
+				for (let k = 0; k < 5; k++) {
+					writeCharToXY(" ",0,i+k,j);
+				}
 			}
-			break
 		}
-	}
-}},100)
+	};
+},500)
