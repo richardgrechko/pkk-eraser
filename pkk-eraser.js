@@ -18,8 +18,9 @@ setInterval(_=>{
 			   ||searchWord("BTB",i,j)
 			   ||searchWord("BKB",i,j)
 			   ||searchWord("TBB",i,j)
+			   ||searchWord("GOYIM SEETHE",i,j)
 			   ||searchWord("█",i,j)) {
-				for (let k = 0; k < 5; k++) {
+				for (let k = 0; k < 13; k++) {
 					writeCharToXY(" ",0,i+k,j);
 				}
 			}
