@@ -12,6 +12,7 @@ setInterval(_=>{
 			   ||searchWord("PKP",i,j)
 			   ||searchWord("PPKK",i,j)
 			   ||searchWord("PKKK",i,j)
+			   ||searchWord("KKK",i,j)
 			   ||searchWord("KTB",i,j)
 			   ||searchWord("KKT",i,j)
 			   ||searchWord("BTB",i,j)
